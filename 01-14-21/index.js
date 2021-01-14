@@ -75,42 +75,43 @@ console.log('running the function: ' + findNeedleTwo(['3', '123124234', undefine
 
 
 
-// ***** CHALLENGE THREE *****
+// //  ***** CHALLENGE THREE *****
 // //     Return an array, where the first element is the count of positives numbers and the second   element is sum of negative numbers.
 
 // // If the input array is empty or null, return an empty array. 
 
-// function countPositivesSumNegatives(input) {
+function countPositivesSumNegatives(input) {
   
-//     //   define two arrays -> one for positives and one for negatives
-//     //   then sum each of the arrays up
-//     // return a new array with just the two sums
+    //   define two arrays -> one for positives and one for negatives
+    //   then sum each of the arrays up
+    // return a new array with just the two sums
       
-//       let positives = [];
-//       let negatives = [];
-//       let sums = [];
+      let positives = [];
+      let negatives = [];
+      let sums = [];
   
-//    if (input == null || input.length == 0)
-//       return [];
+   if (input == null || input.length == 0)
+      return [];
 
-//       input.map(num => {
-//         if(num < 0) {
-//             negatives.push(num)
-//             } else if (num > 0) {
-//         positives.push(num)
-//       }
-//       })
+      input.map(num => {
+        if(num < 0) {
+            negatives.push(num)
+            } else if (num > 0) {
+        positives.push(num)
+      }
+      })
 
-//       let posLength = positives.length;
-//       let negSum = negatives.reduce((a, b) => a + b, 0);
-//     //   console.log(negSum);
-//       sums.push(posLength, negSum);
+      let posLength = positives.length;
+      let negSum = negatives.reduce((a, b) => a + b, 0);
+    //   console.log(negSum);
+      sums.push(posLength, negSum);
       
-//         return sums;
-//     }
+        return sums;
+    }
 
-// console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
 
 
-
+// //  ***** CHALLENGE FOUR *****
+// //    
 
